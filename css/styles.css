@@ -1,0 +1,191 @@
+/*Цвет акцента color: #2196F3;*/
+/* Основной цвет текста color: #212121;*/
+/* Вторичный цвет текста: color: #757575; */
+/* Белый цвет color: #FFFFFF; */
+/* Цвет email и телефона в подвале color: rgba(255, 255, 255, 0.6); */
+/* Цвет фона 1 #2F303A; */
+/* Вторичный цвет элементов и фона 2 #F5F4FA; */
+
+/* Переменные */
+
+:root{
+    --white:#FFFFFF;
+    --bgcolor1:#F5F4FA;
+    --bgcolor2: #2F303A;
+    --textcolor: #757575;
+    --textcolor2:#212121;    
+    --accentcolor:#2196F3;
+}
+
+/* Глобальные стили */
+
+body {
+    color:var(--textcolor);
+    background-color:var(--white);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal,
+    font-weight: 400
+    letter-spacing: 0.03em;
+}
+
+/* Шапка */
+
+.n-list {
+    list-style: none;
+}
+.n-link {
+    text-decoration: none;
+}
+
+.logo {
+    color:#000000;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,19;
+}
+
+.logo-accent {
+    color: var(--accentcolor)
+}
+
+/* Навигация */
+
+.site-nav .n-link{
+    color:var(--textcolor2);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .n-link:hover,
+.site-nav .n-link:focus {
+    color: var(--accentcolor);
+}
+
+.site-nav .n-link.current {
+    color: var(--accentcolor);
+}
+
+.contact-nav .n-link {
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contact-nav .n-link:hover,
+.contact-nav .n-link:focus {
+    color: var(--accentcolor);
+}
+
+/* Тело */
+
+/* Герой */
+
+.hero {
+    color: ;
+    background-color: var(--bgcolor2);
+    letter-spacing: 0.06em
+}
+
+.hero-title {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;    
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Секция отличия */
+
+.differences-list {
+    font-size: 14px;
+    line-height: 1.17;
+}
+
+.differences-title {
+    color: var(--textcolor2);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+/* Секция чем занимаемся */
+
+.section-title {
+    color: var(--textcolor2);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+/* Секция команда */
+
+.team {
+    background-color: var(--bgcolor1);
+}
+
+.team-list {
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.team-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--textcolor2);
+}
+
+/* Футер */
+
+.footer {
+    background-color: var(--bgcolor2);
+}
+
+.footer-adress .n-link {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6)
+}
+
+.footer-adress .n-link:hover,
+.footer-adress .n-link:focus {
+    color: #FFFFFF;
+}
+
+/*Кнопка*/
+
+.button {
+    background-color:var(--bgcolor1)
+}
+
+.button.primary {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background-color: var(--accentcolor);
+    color: var(--white);
+}
+
+.button.secondary {
+    color: var(--textcolor2);
+    background-color: var(--bgcolor1);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
+
+.button.secondary:hover {
+    color: var(--white);
+    background-color: var(--accentcolor)
+}
+
