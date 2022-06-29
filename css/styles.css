@@ -1,11 +1,3 @@
-/*Цвет акцента color: #2196F3;*/
-/* Основной цвет текста color: #212121;*/
-/* Вторичный цвет текста: color: #757575; */
-/* Белый цвет color: #FFFFFF; */
-/* Цвет email и телефона в подвале color: rgba(255, 255, 255, 0.6); */
-/* Цвет фона 1 #2F303A; */
-/* Вторичный цвет элементов и фона 2 #F5F4FA; */
-
 /* Переменные */
 
 :root{
@@ -22,9 +14,8 @@
 body {
     color:var(--textcolor);
     background-color:var(--white);
-    font-family: 'Roboto', sans-serif;
-    font-style: normal,
-    font-weight: 400
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: 14px;
     letter-spacing: 0.03em;
 }
 
@@ -54,7 +45,6 @@ body {
 .site-nav .n-link{
     color:var(--textcolor2);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
@@ -71,7 +61,6 @@ body {
 .contact-nav .n-link {
     color: #757575;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
@@ -103,7 +92,6 @@ body {
 /* Секция отличия */
 
 .differences-list {
-    font-size: 14px;
     line-height: 1.17;
 }
 
@@ -150,7 +138,6 @@ body {
 }
 
 .footer-adress .n-link {
-    font-size: 14px;
     font-style: normal;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6)
@@ -161,30 +148,48 @@ body {
     color: #FFFFFF;
 }
 
+/* Портфолио */
+
+/* Примері работ */
+
+.worklist {
+    font-size: 16px;
+    line-height: 1.87;
+}
+
+.worklist-title {
+    color: var(--textcolor2);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
 /*Кнопка*/
 
 .button {
-    background-color:var(--bgcolor1)
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    background-color:var(--bgcolor1);
+    color: var(--textcolor2);
 }
 
 .button.primary {
     font-weight: 700;
-    font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
     background-color: var(--accentcolor);
     color: var(--white);
 }
 
-.button.secondary {
-    color: var(--textcolor2);
-    background-color: var(--bgcolor1);
+.button.secondary {    
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.62;
 }
 
-.button.secondary:hover {
+.button.secondary:hover,
+.button.secondary:focus {
     color: var(--white);
     background-color: var(--accentcolor)
 }
