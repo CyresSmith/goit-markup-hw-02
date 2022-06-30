@@ -2,10 +2,10 @@
 
 :root{
     --white:#FFFFFF;
-    --bgcolor1:#F5F4FA;
-    --bgcolor2: #2F303A;
+    --mainbgcolor:#F5F4FA;
+    --secondbgcolor: #2F303A;
     --textcolor: #757575;
-    --textcolor2:#212121;    
+    --secondtextcolor:#212121;    
     --accentcolor:#2196F3;
 }
 
@@ -16,15 +16,14 @@ body {
     background-color:var(--white);
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     font-size: 14px;
-    letter-spacing: 0.03em;
 }
 
 /* Шапка */
 
-.n-list {
+.clean-list {
     list-style: none;
 }
-.n-link {
+.clean-link {
     text-decoration: none;
 }
 
@@ -34,6 +33,8 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1,19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 .logo-accent {
@@ -42,31 +43,43 @@ body {
 
 /* Навигация */
 
-.site-nav .n-link{
-    color:var(--textcolor2);
+.site-nav {
+    list-style: none;
+}
+
+.site-nav-list{
+    color:var(--secondtextcolor);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
-.site-nav .n-link:hover,
-.site-nav .n-link:focus {
+.site-nav-list:hover,
+.site-nav-list:focus {
     color: var(--accentcolor);
 }
 
-.site-nav .n-link.current {
+.site-nav-list.current {
     color: var(--accentcolor);
 }
 
-.contact-nav .n-link {
+.contact-nav {
+    list-style: none;
+}
+
+.contact-nav-list {
     color: #757575;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;    
 }
 
-.contact-nav .n-link:hover,
-.contact-nav .n-link:focus {
+
+
+.contact-nav-list:hover,
+.contact-nav-list:focus {
     color: var(--accentcolor);
 }
 
@@ -76,7 +89,7 @@ body {
 
 .hero {
     color: ;
-    background-color: var(--bgcolor2);
+    background-color: var(--secondbgcolor);
     letter-spacing: 0.06em
 }
 
@@ -93,58 +106,70 @@ body {
 
 .differences-list {
     line-height: 1.17;
+    letter-spacing: 0.03em;
 }
 
 .differences-title {
-    color: var(--textcolor2);
+    color: var(--secondtextcolor);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
-}
+    }
 
 /* Секция чем занимаемся */
 
 .section-title {
-    color: var(--textcolor2);
+    color: var(--secondtextcolor);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
+    letter-spacing: 0.03em;
     text-align: center;
+    
 }
 
 /* Секция команда */
 
 .team {
-    background-color: var(--bgcolor1);
+    background-color: var(--mainbgcolor);
 }
 
 .team-list {
     font-size: 16px;
     line-height: 1.18;
+    letter-spacing: 0.03em;
 }
 
 .team-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    color: var(--textcolor2);
+    letter-spacing: 0.03em;
+    color: var(--secondtextcolor);
 }
 
 /* Футер */
 
 .footer {
-    background-color: var(--bgcolor2);
+    background-color: var(--secondbgcolor);
 }
 
-.footer-adress .n-link {
+.footer-adress {
+    list-style: none;
+}
+
+.footer-adress-list {
     font-style: normal;
     line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6)
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;   
 }
 
-.footer-adress .n-link:hover,
-.footer-adress .n-link:focus {
+.footer-adress-list:hover,
+.footer-adress-list:focus {
     color: #FFFFFF;
 }
 
@@ -158,7 +183,7 @@ body {
 }
 
 .worklist-title {
-    color: var(--textcolor2);
+    color: var(--secondtextcolor);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -170,26 +195,25 @@ body {
 .button {
     cursor: pointer;
     font-family: inherit;
-    font-size: 16px;
-    background-color:var(--bgcolor1);
-    color: var(--textcolor2);
 }
 
-.button.primary {
+.button.hero {
+    font-size: 16px;
     font-weight: 700;
     line-height: 1.87;
     letter-spacing: 0.06em;
     background-color: var(--accentcolor);
-    color: var(--white);
+    color: var(--white);    
 }
 
-.button.secondary {    
+.button.primary {
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.62;
 }
 
-.button.secondary:hover,
-.button.secondary:focus {
+.button.primary:hover,
+.button.primary:focus {
     color: var(--white);
     background-color: var(--accentcolor)
 }
